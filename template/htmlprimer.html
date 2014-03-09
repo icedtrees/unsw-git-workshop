@@ -46,31 +46,49 @@
 				Try opening a <code>.html</code> file in gedit. Notice how everything is made up of words surrounded by angle brackets,
 				for example <code>&lt;p&gt;</code>? These are called <b>tags</b> and usually they come in pairs: <code>&lt;b&gt;tags&lt;/b&gt;</code>.
 				Here, the first tag says 'start making things bold', whereas the second tag - with the <code>/</code> says 'stop making things bold'.
-				Similarly, <code>&lt;p&gt;Here is a paragraph&lt;/p&gt;</code> has a tag that says 'start the paragraph' and 'end the paragraph':
+				Similarly, <code>&lt;p&gt;Here is a paragraph&lt;/p&gt;</code> has a tag that says 'start the paragraph' and 'end the paragraph'.
 			</p>
-			<p>Here is a paragraph</p>
-			<p>The following
-				is a quick reference to help you make some damn fine-looking notes!
+			<p>The following is a quick reference to help you make some damn fine-looking notes!
 			</p>
-			<table class="table table-striped">
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Tags</th>
+						<th>Function</th>
+						<th>Example</th>
+					</tr>
+				</thead>
 				<tr>
-					<td>Tags</td>
-					<td>Function</td>
-					<td>Example</td>
-				</tr>
-				<tr>
-					<td><code>&lt;b&gt;Words&lt;/b&gt;</code></td>
+					<td><code>&lt;b&gt; Words &lt;/b&gt;</code></td>
 					<td>Makes things bold</td>
 					<td><b>Words</b></td>
 				</tr>
 				<tr>
-					<td><code>&lt;i&gt;Words&lt;/i&gt;</code></td>
+					<td><code>&lt;i&gt; Words &lt;/i&gt;</code></td>
 					<td>Makes things italicised</td>
 					<td><i>Words</i></td>
+				</tr>
+				<tr>
+					<td><code>&lt;p&gt; Words &lt;/p&gt;</code></td>
+					<td>Makes a nicely-formatted paragraph.</td>
+					<td>You should probably try this one out in your notes.</td>
+				</tr>
+				<tr>
+					<td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt; Words &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td>
+					<td>Begins a table, then a table row then a table data cell.</td>
+					<td>Use <a href="cs.brown.edu/courses/cs132/resources/inspector/‎">'inspect element'</a> to find the table code!</td>
+				</tr>
+				<tr>
+					<td><code>&lt;ul&gt;&lt;li&gt; List item &lt;/li&gt;&lt;/ul&gt;</code></td>
+					<td>Makes an <b>u</b>nordered <b>l</b>ist, with <b>l</b>ist <b>i</b>tems.</td>
+					<td><ul><li>List item</li></ul></td>
 				</tr>
 			</table>
 
 			<p>
+				Make sure that you use <a href="http://www.w3schools.com/html/html_entities.asp">HTML entity codes</a> for characters such as <b>&lt;</b
+				(<code>&amp;lt;</code> 'less than') and <b>&gt;</b> (<code>&amp;gt;</code> 'greater than'), so that the browser can tell if it's real
+				HTML.
 				If you want to make even cooler notes, check out Bootstrap <a href="http://getbootstrap.com/css">CSS</a>,
 				<a href="http://getbootstrap.com/components">Components</a> and <a href="http://getbootstrap.com/javascript">Javascript</a>.
 			</p>
